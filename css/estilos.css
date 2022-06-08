@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Rajdhani', sans-serif;
+}
+a{
+    text-decoration: none;
+    }
+
+
+.padre{
+    margin-top: 0;
+    padding-top: 0;
+    background-color: #aaa;
+    display: flex;
+    flex-flow: column nowrap;
+}
+    header{
+        background: url(/img/fondo_calido.jpg);
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        display: flex;
+        flex-flow: column nowrap;
+        margin: 0;
+        padding: 0;
+    }
+    .menu{
+        width: 100;
+            margin: 0;
+            padding: 0;
+            background:rgba(0,0,0,0.1);
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid rgba(255,255,255,0.5);
+            }
+            .menu__logo{
+                margin-bottom: 0;
+                margin-left: 50px;
+                flex: 1 1 auto;
+               align-self: auto;
+                text-align: left;
+            }
+            
+            .menu__logo img {
+                width: 15vw;
+                min-width: 5vw;
+                margin:0;
+                padding:0;
+                
+            }
+            .menu__logo a {
+                padding: 0;
+                margin: 0;
+            }    
+            
+            .menu__botonera{
+                float: right;
+                margin-right: 30px;
+            }
+
+            .menu__botonera li{
+                display:inline-block;
+                border-radius: 3px;
+                margin: 0 5px;
+                
+            }
+
+            .menu__botonera li a{
+                font-size: 1vw;
+                letter-spacing: .1rem;
+                font-weight: bold;
+                color: #fff;
+                text-decoration: none;
+                padding: 3px 13px;
+                margin: 1px;                
+                display: block;
+                text-transform: uppercase;
+                border: 2px solid rgba(0,0,0,0.1);
+                border-radius: 50px;
+                }
+            i {
+                margin-right: 10px;
+            }        
+
+            .menu__botonera li a:hover, li a.active{
+                color: #000;
+                background-color: rgb(185,231,245);            
+                border: 2px solid #000;
+                transform: scale(1.1);
+                transition: .4s;
+            }
+
+            .menu__btn{
+                margin-right: 30px;
+                font-size: 30px;
+                color: #fff ;
+                cursor: pointer;
+                float: right;
+                line-height: 80px;
+                display: none;
+                }        
+            #check{
+                display: none;
+            }
+        
+
+        .banner{
+            background:#FFD9C0;
+        }
+            h1{
+                background-color: #FAF0D7;
+            }
+            
+    .muestras{
+        background-color: #000;
+        display: flex;
+    }
+    .muestras__articulos{
+        background-color: #2F8F9D;
+        flex: 3 1 auto;
+        display: flex;
+        flex-flow: row wrap;
+        }
+    .muestras__tejidos{
+                background:#82DBD8;
+                flex: 1 1 40%;
+            }
+        .videos{
+            background-color: #FD5D5D;
+            flex: 1 1 auto;
+        }
+        .videos__ejemplos{
+            background-color: #FFF7BC;
+        }
+        .aside__articulos{
+            background-color: #F4BFBF;
+        }
+    
+    footer{
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+    }
+        .pie{
+            background:#826F66;
+            width: 300px;
+        }
+@media all and (max-width: 800px){
+    .muestras{
+        display: flex;
+        flex-flow: column;
+    } 
+    .videos{
+        display: flex;
+    }
+    .videos__ejemplos{
+        flex: 1 1 auto;
+    }
+
+}
+@media all and (max-width: 600px){
+    .muestras__articulos{
+        display: flex;
+        flex-flow: column;
+    } 
+    
+
+}
+@media all and (max-width: 400px){
+    .videos{
+        display: flex;
+        flex-direction: column;
+    } 
+}
