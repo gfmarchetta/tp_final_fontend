@@ -19,7 +19,7 @@ a{
     flex-flow: column nowrap;
 }
     header{
-        background: url(/img/fondo_calido.jpg);
+        background: url(../img/fondo_calido.jpg);
         background-position: center;
         background-attachment: fixed;
         background-size: cover;
