@@ -21,7 +21,9 @@ align-items: center;
 }
 
 .container .btn-menu label:hover {
-    color: #EE767F;
+    color: #ee2330;
+    text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
+
 }
 
 .logo h1 {
@@ -132,6 +134,8 @@ nav li{
     transform: scale(1.1);
     color: #ee2330;
     font-size: 27px;
+    font-weight: bold;
+    text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
 }
 
 /* .cont-menu label {
