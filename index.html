@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Almacen de apapachos</title>
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="ext/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/muestras.css" />
+    <link rel="stylesheet" href="css/videos.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="ext/fontawesome/css/fontawesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Qwitcher+Grypen:wght@700&family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Marck+Script&family=Qwitcher+Grypen:wght@700&family=Rajdhani:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9e28096f35.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div class="padre">
-        <header>
-            <div class="menu">
-                <div class="menu__logo">
-                    <a href=""><img src="img/Logo_sin_fondo.png" alt=""></a>
+        <header class="header">
+            <div class="container">
+                <div class="btn-menu">
+                    <label for="btn-menu">Menu<i class="fas fa-bars"></i></label>
                 </div>
-                <nav class="menu__nav">
-                    <input type="checkbox"  id="check">
-                    <label for="chek" class="menu__btn">
-                        <i class="fas fa-bars"></i>
-                    </label>
-                    <ul class="menu__botonera">
+                <!-- <div class="logo">
+                    <h1>Almacen De Apapachos</h1>
+                </div> -->
+            </div>
+        </header>
+        <div class="capa"></div>
+        <!--	--------------->
+        <input type="checkbox" id="btn-menu" />
+        <div class="container-menu">
+            <div class="cont-menu">
+                <nav>
+                    <ul>
                         <li><a href="/" class="active"><i class="fa-solid fa-house-chimney"></i>Inicio</a></li>
                         <li><a href="pages/nosotros.html"><i class="fa-solid fa-user"></i>Nosotros</a></li>
                         <li><a href="pages/catalogo.html"><i class="fa-solid fa-clipboard-list"></i>Catalogo</a></li>
@@ -29,26 +42,84 @@
                     </ul>
                 </nav>
             </div>
-            <div class="banner">
-                <h1></h1>
+        </div>
+
+        <div class="banner">
+            <div class="banner__sombra">
+                <div class="container">
+                    <div class="info"> <img src="/img/Logo_sin_fondo.png" alt=""></div>
+                    <div class="banner__info">
+                        <div class="info"> <h2>En momentos dónde los abrazos se complican, regala apapachos, llenan el alma.</h2></div>
+                    </div>
+                </div>
+                <div class="info__envios">
+                    <p>A pedido, envíos a todo el País 🚚, todos los medios de pago</p>
+                </div>
             </div>
-        </header>
+        </div>
+
         <section class="muestras">
             <div class="muestras__articulos">
-                <article class="muestras__tejidos"></article>
-                <article class="muestras__tejidos"></article>
-                <article class="muestras__tejidos"></article>
-                <article class="muestras__tejidos"></article> 
+                <article class="muestras__tejidos">
+                    <div class="muestras__tejidos__img">
+                        <img src="/img/amigurumi.png" alt="">
+                    </div>
+                    <div class="muestras__tejidos__info">
+                        <h2>Amigurumis</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
+                    </div>
+                </article>
+                <article class="muestras__tejidos">
+                    <div class="muestras__tejidos__img">
+                        <img src="/img/indumentaria.png" alt="">
+                    </div>
+                    <div class="muestras__tejidos__info">
+                        <h2>Indumentaria</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
+                    </div>
+                </article>
+                <article class="muestras__tejidos">
+                    <div class="muestras__tejidos__img">
+                        <img src="/img/mantas.png" alt="">
+                    </div>
+                    <div class="muestras__tejidos__info">
+                        <h2>Mantas</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
+                    </div>
+                </article>
+
             </div>
             <aside class="videos">
-                <div class="videos__ejemplos"></div>
-                <div class="videos__ejemplos"></div>
-                <div class="videos__ejemplos"></div>
+                <div>
+                    <h2>Tutoriales</h2>
+                </div>
+                <div class="videos__ejemplos">
+                    <h3>EJEMPLO1</h3>
+                    <iframe width="250" height="150" src="https://www.youtube.com/embed/WtnBjfMLO30"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="videos__ejemplos">
+                    <h3>EJEMPLO2</h3>
+                    <iframe width="250" height="150" src="https://www.youtube.com/embed/XybZZDEEthQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="videos__ejemplos">
+                    <h3>EJEMPLO4</h3>
+                    <iframe width="250" height="150" src="https://www.youtube.com/embed/VAD4zQU36VA"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
             </aside>
-        </section>    
+        </section>
         <footer>
             <nav class="pie"></nav>
         </footer>
-    </div>    
+    </div>
 </body>
+
 </html>

@@ -1,0 +1,27 @@
+.videos {
+    width: 40%;
+    background-color: #fd5d5d;
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #000;
+    justify-content: space-between;
+
+  }
+  .videos__ejemplos {
+    width: 100%;
+    background-color: #fff7bc;
+    margin: 10px;
+  }
+  .aside__articulos {
+    background-color: #f4bfbf;
+
+  }
+  .videos h2{
+    font-size: 5vmin;
+    font-weight: normal;
+    margin-bottom: 20px;
+  }
