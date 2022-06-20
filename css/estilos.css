@@ -45,7 +45,7 @@ header {
   left: 0;
 }
 .banner {
-  background: url(../img/fondo_calido.jpg);
+  background: url(../img/fondo_calido.png);
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -242,7 +242,7 @@ Consiguraciones hasta 400px
     text-align: left;
   }
   .banner{
-    height: 95vh;
+    height: 90vh;
   }
   .banner .container{
     justify-content: space-evenly;
