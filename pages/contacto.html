@@ -1,48 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Almacen de apapachos</title>
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="/ext/fontawesome/css/fontawesome.min.css">
-    <script src="https://kit.fontawesome.com/9e28096f35.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css" />
+    <link rel="stylesheet" href="../css/menu.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/contacto.css" />
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="../ext/fontawesome/css/fontawesome.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Qwitcher+Grypen:wght@700&family=Rajdhani:wght@300&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Marck+Script&family=Qwitcher+Grypen:wght@700&family=Rajdhani:wght@300&display=swap"
+        rel="stylesheet">
+
+    <title>Contacto</title>
 </head>
+
 <body>
     <div class="padre">
-        <header>
-            <div class="menu">
-                <div class="menu__logo">
-                    <a href=""><img src="/img/Logo_sin_fondo.png" alt=""></a>
+        <header class="header">
+            <div class="container">
+                <div class="btn-menu">
+                    <label for="btn-menu">Menu<i class="fas fa-bars"></i></label>
                 </div>
-                <nav class="nav">
-                    <a href="/"><i class="fa-solid fa-house-chimney"></i>Inicio</a>
-                    <a href="/pages/nosotros.html"><i class="fa-solid fa-user"></i>Nosotros</a>
-                    <a href="/pages/catalogo.html"><i class="fa-solid fa-clipboard-list"></i>Catalogo</a>
-                    <a href="/pages/contacto.html"><i class="fa-solid fa-envelope"></i>Contacto</a>
-                </nav>
-            </div>
-            <div class="banner">
-                <h1></h1>
             </div>
         </header>
-        <section class="muestras">
-            <div class="muestras__articulos">
-                <article class="muestras__tejidos"></article>
-                <article class="muestras__tejidos"></article>
-                <article class="muestras__tejidos"></article>
-                <article class="muestras__tejidos"></article> 
+        <input type="checkbox" id="btn-menu" />
+        <div class="container-menu">
+            <div class="cont-menu">
+                <nav>
+                    <ul>
+                        <li><a href="/" class="active"><i class="fa-solid fa-house-chimney"></i>Inicio</a></li>
+                        <li><a href="../pages/nosotros.html"><i class="fa-solid fa-user"></i>Nosotros</a></li>
+                        <li><a href="../pages/catalogo.html"><i class="fa-solid fa-clipboard-list"></i>Catalogo</a></li>
+                        <li><a href=""><i class="fa-solid fa-envelope"></i>Contacto</a></li>
+                    </ul>
+                </nav>
             </div>
-            <aside class="videos">
-                <div class="videos__ejemplos"></div>
-                <div class="videos__ejemplos"></div>
-                <div class="videos__ejemplos"></div>
-            </aside>
-        </section>    
+        </div>
+
+        <section class="contacto">
+            <div class="contacto__imagen"><img src="../img/portada contacto.jpg" alt=""></div>
+            <div class="contacto__formulario">
+                <h2>Contacto</h2>
+
+
+                <form action="" class="formulario" id="formulario">
+                   
+                    <div class="formulario__grupo" id="grupo__nombre">
+                        <label for="nombre" class="formulario__label">Nombre</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name= "nombre" id="nombre" placeholder="Nombre">
+                            <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                        </div>
+                        <p class="formulario__input-error">El nombre solo puede contener letras y espacios</p>
+                    </div>
+
+                    <div class="formulario__grupo" id="grupo__email">
+                        <label for="email" class="formulario__label">Email</label>
+                        <div class="formulario__grupo-input">
+                            <input type="email" class="formulario__input" name="email" id="email" placeholder="Email">
+                            <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                        </div>
+                        <p class="formulario__input-error">El email solo puede contener texto, numeros, puntos, guiones
+                            y guion bajo</p>
+                    </div>
+
+                    <div class="formulario__grupo" id="grupo__telefono">
+                        <label for="telefono" class="formulario__label">Teléfono</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+                    </div>
+
+                    <div class="formulario__grupo" id="grupo__mensaje">
+                        <label for="mensaje" class="formulario__label">Mensaje</label>
+                        <div class="formulario__grupo-input">
+                            <textarea class ="formulario__textArea" name ="mensaje" placeholder="Ingrese su comentario"></textarea>
+                            <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                        </div>
+                        <p class="formulario__input-error" >El máximo de caracteres es de 250</p>
+                    </div>
+
+                    <div class="formulario__mensaje-form-vacio" id="formulario__mensaje-form-vacio">
+                        <p><i class="fas fa-exclamation-triangle"></i> <b>Error :</b> Por favor rellena el formulario
+                            correctamente. </p>
+                    </div>
+
+                    <div class="formulario__grupo formulario__grupo-btn-enviar">
+                        <button type="submit" class="formulario__btn" id="formulario__btn">Enviar</button>
+                        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">
+                            <i class="fa-solid fa-circle-check"></i>
+                            Su mensaje fue enviado correctamente.
+                        </p>
+                    </div>                    
+                </form>
+            </div>    
+        </section>
+
         <footer>
-            <nav class="pie"></nav>
+            <nav class="pie">
+                <div class="pie__contenedor">
+                    <div class="pie__contenedor__redes">
+                        <a href="https://www.instagram.com/almacendeapapachos/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                            <p>@almacendeapapachos</p>
+                        </a>
+                    </div>
+                    <div class="copyright">
+                        Copyright © 2022
+                    </div>
+                    <div class="autor">by Gabriel Marchetta</div>
+                </div>
+            </nav>
         </footer>
-    </div>    
+    </div>
+    </div>
+
+    <script src="../js/formulario.js"></script>
+
+    <script src="https://kit.fontawesome.com/9e28096f35.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

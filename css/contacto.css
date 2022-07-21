@@ -1,0 +1,254 @@
+.contacto {
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5;
+    display: flex;
+}
+
+.contacto__imagen {
+    min-width: 50%;
+    min-height: 100%;
+    display: flex;
+}
+
+.contacto__imagen img {
+    width: 100%;
+    height: 100%;
+}
+
+.contacto__formulario {
+    margin-top: 20px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.contacto__formulario h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #3a3831;
+    /* margin: 30px; */
+}
+
+.formulario {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.formulario__label {
+    color: #3a3831;
+    display: block;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.formulario__grupo-input {
+    position: relative;
+}
+
+form textarea {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #3a3831;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+
+form button {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #3a3831 !important;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.formulario__btn:hover {
+    box-shadow: 10px 0px 30px rgb(54, 54, 54);
+}
+
+formulario__grupo {
+    display: flex;
+    flex-flow: row;
+}
+
+.formulario__input {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #3a3831;
+    border-radius: 5px;
+    padding: 0 10px;
+    /* margin: 10px 10px 0 0; */
+    /* margin: 10px;; */
+}
+
+.formulario__input:focus, .formulario__textArea:focus {
+    outline: none;
+	border: 3px solid #0075FF;
+	/* border: 3px solid #3a3831; */
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.formulario__validacion-estado {
+    position: absolute;
+    right: 0;
+    bottom: 8px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
+}
+
+.formulario__validacion-textarea-estado {
+    right: 10px;
+    bottom: 85px;
+    position: absolute;
+    z-index: 100;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+}
+
+.formulario__input-error {
+    margin-left: 10px;
+    margin-bottom: 0;
+    display: none;
+}
+
+.formulario__input-error-activo {
+    display: block;
+}
+
+.formulario__mensaje-exito {
+    width: 100%;
+    background: #119200;
+    color: #fff;
+    height: 45px;
+    line-height: 45px;
+    font-weight: bold;
+    padding: 0 15px;
+    border-radius: 3px;
+    margin: 10px 0;
+    display: none;
+}
+
+.formulario__mensaje-exito-activo {
+    display: block;
+}
+
+.formulario__mensaje-form-vacio {
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    font-weight: bold;
+    background: #f66060;
+    color: #fff;
+    padding: 0 15px;
+    border-radius: 3px;
+    margin: 10px 0;
+    display: none;
+}
+.formulario__mensaje-form-vacio-activo {
+    display: block;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+    color: #1ed12d;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+    color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+    color: #bb2929;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+    border: 3px solid #bb2929;
+}
+.formulario__grupo-incorrecto .formulario__textArea {
+    border: 3px solid #bb2929;
+}
+
+
+/* ----- -----  Mediaqueries ----- ----- */
+@media screen and (max-width: 800px) {
+	.contacto{
+        display: flex;
+        flex-flow: column nowrap;
+        }
+    .contacto__imagen{
+        height: 250px;
+        display: flex;
+        }
+
+    .contacto__formulario{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        
+    }
+}
+
+
+
+
+/* #formulario__mensaje i {
+            right: 5px;
+            bottom: 50px;
+            position: absolute;
+            z-index: 100;
+            font-size: 16px;
+            color: #3a3831;
+            margin:0;
+            padding: 0;
+           
+        } */
+
+/* .redes {
+    width: 20vw;
+    height: 100%;
+    justify-content: center;
+    align-items: left;
+    margin: 20px 20px 0 0;
+    display: flex;
+    flex-flow: column nowrap;
+    }
+.redes a {
+    color: #3a3831;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0 10px;
+}
+.redes a p {
+    margin: 0;
+}
+
+.redes i {
+    color: #3a3831;
+    font-size: 30px;
+    margin: 30px;
+} */

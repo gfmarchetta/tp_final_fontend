@@ -1,15 +1,12 @@
 .container {
-    width: 90%;
-    max-width: 1200px;
+    width: 90vw;
+    /* max-width: 1200px; */
     margin: auto;
     height: 50px;
     display: flex;
     justify-content: right;
-align-items: center;
+    align-items: center;
 }
-
-
-
 .container .btn-menu label {
     float: right;
     margin: auto;
@@ -19,21 +16,17 @@ align-items: center;
     font-size: 27px;
     cursor: pointer;
 }
-
 .container .btn-menu label:hover, label:checked {
-    color: #ee2330;
+    /* color: #ee2330; */
     font-size: 30px;
     text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
 }
-
 .logo h1 {
     color: #fff;
     font-weight: 400;
     font-size: 25px;
     margin-left: 10px;
 }
-
-
 /*Fin de Estilos para el encabezado*/
 
 /*Menù lateral*/
@@ -55,13 +48,11 @@ align-items: center;
     z-index: 1;
 
 }
-
 #btn-menu:checked~.container-menu {
     opacity: 1;
     visibility: visible;
     /* z-index: 1; */
 }
-
 .cont-menu {
     float: right;
     /* width: 50%; */
@@ -76,8 +67,6 @@ align-items: center;
     /* transform: translateY(100%); */
     display: flex;
     justify-content: center;
-
-
 }
 
 #btn-menu:checked~.container-menu .cont-menu {
@@ -108,12 +97,12 @@ nav ul {
     align-items: center;
     margin: 0;
     padding: 0;
-    border-top: 1px solid #c7c7c7;
+    /* border-top: 1px solid #c7c7c7; */
 }
 
 nav li{
     width: 100%;
-    border-bottom: 1px solid #c7c7c7;
+    /* border-bottom: 1px solid #c7c7c7; */
 }
 
 .cont-menu nav a {
@@ -128,9 +117,9 @@ nav li{
 }
 
 .cont-menu nav a:hover {
-    border-left: 5px solid #ee2330;
+    /* border-left: 5px solid #ee2330; */
     background: rgb(44, 44, 44);
-    color: #ee2330;
+    /* color: #ee2330; */
     font-size: 27px;
     font-weight: bold;
     text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);

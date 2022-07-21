@@ -1,0 +1,84 @@
+.banner {
+    background: url(../img/fondo_calido.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner .container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    height:100vh; 
+    text-align: center;
+  }
+  .info{
+    width: 100%;
+    height: 50%;
+  }
+  .info__envios{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .banner__sombra  p{
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    margin: auto;
+    color: #fff;
+    font-size: 1.3em;
+  }
+  
+  .banner__sombra {
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner img {
+    margin-top: 20px;
+    width: 50vmin;
+    height: 100%;
+  }
+  .banner__info{ 
+    display:flex;
+    flex-flow: column nowrap;
+    max-width:  75%;
+    /* height: 50vh; */
+    text-align: center;
+    font-family: 'Marck Script', cursive;
+    /* color: #EDEDED; */
+  }
+  .banner__info h2{
+    width: 100%;
+    font-size: 2.5em;
+    font-weight: normal;
+    padding-top: 30px;
+    color: #fff;
+    /* text-shadow: 4px 4px 4px  rgb(3, 3, 3) , 2px 2px 2px #e4e1e1; */
+    /* text-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 10px rgba(255,255,255,1); */
+
+
+    /* texto bloanco con resplandor gris */
+    text-shadow: 0 0 30px rgb(67, 67, 67), 0 0 20px rgba(67,67,67,1);
+  }
+
+  @media screen and (max-width: 768px) {
+    .banner__info h2{
+      font-size: 1.5em;
+    }
+  }
