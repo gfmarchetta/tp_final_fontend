@@ -38,10 +38,10 @@
 .nosotros__info__texto p{
     width:100%;
     margin: auto;
-    font-size: 3em;
+    font-size: 2em;
     color: #3a3831;
     text-shadow: 4px 4px 4px #3a3831, 2px 2px 2px #e4e1e1;
-    height: bold;
+    font-weight: bold;
     text-align: left;
     
 }
