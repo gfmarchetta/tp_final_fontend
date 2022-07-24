@@ -1,5 +1,6 @@
 .container {
-    width: 90vw;
+    width: 100vw;
+    height: 100vh;
     /* max-width: 1200px; */
     margin: auto;
     height: 50px;
@@ -38,7 +39,7 @@
     position: absolute;
     top: 50px;
     right: 0;
-    width: 300PX;
+    width: 300px;
     height: 80vh;
     /* top: 100;left: 100; */
     /* transition: all 500ms ease; */
@@ -137,3 +138,14 @@ nav li{
 } */
 
 /*Fin de Menù lateral*/
+
+@media screen and (min-width: 401px)and (max-width: 600px) {
+    nav{
+display: block;  
+width: 100%;
+ }
+    nav ul{
+        width: 100% !important;    
+    }
+}
+    
